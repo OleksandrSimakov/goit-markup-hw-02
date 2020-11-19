@@ -1,13 +1,83 @@
 /* основной фон #FFFFFF
 вторичный фон #F5F4FA
+фон героя и футера #2F303A
 синий #2196F3
 черный лого #000000
-черный заголовки #212121
+черный основной #212121
 серый шапка и абзацы #757575
 белый основной #FFFFFF
 белый подвал rgba(255, 255, 255, 0.6) */
 
+/* body */
 body {
   background-color: #ffffff;
+  color: #212121;
+}
+
+/* logo header */
+.logo {
+  color: #2196f3;
+}
+.header-logo {
+  color: #212121;
+}
+.footer-logo {
+  color: #ffffff;
+}
+
+/* ul */
+.list {
+  list-style: none;
+}
+
+/* a */
+.link {
+  text-decoration: none;
+}
+
+/* site-nav */
+.site-nav .link {
+  color: #212121;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+
+/* header-address list */
+.header-address .link {
   color: #757575;
+}
+.header-address .link:hover,
+.header-address .link:focus {
+  color: #2196f3;
+}
+
+/* hero */
+.hero {
+  color: #ffffff;
+  background-color: #2f303a;
+}
+
+/* section paragraph */
+.section-paragraph {
+  color: #757575;
+}
+.footer-address link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* footer */
+footer {
+  background-color: #2f303a;
+}
+.footer-address .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-address .link:hover,
+.footer-address .link:focus {
+  color: #2196f3;
+}
+.street.link {
+  color: #ffffff;
 }

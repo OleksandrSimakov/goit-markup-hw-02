@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
     <title>Главная</title>
   </head>
@@ -10,28 +11,27 @@
     <!--Шапка сайта-->
       <header>
         <nav>
-          <a href="./index.html" lang="en" aria-label="логотип кампании">
-            <span>Web</span>Studio
+          <a class="logo link" href="./index.html" lang="en" aria-label="логотип кампании">Web<span class="header-logo">Studio</span>
           </a>
-          <ul>
+          <ul class="site-nav list">
             <li>
-              <a href="./index.html">Студия</a>
+              <a class="link" href="./index.html">Студия</a>
             </li>
             <li>
-              <a href="./portfolio.html">Портфолио</a>
+              <a class="link" href="./portfolio.html">Портфолио</a>
             </li>
             <li>
-              <a href="">Контакты</a>
+              <a class="link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
         <address>
-          <ul>
+          <ul class="header-address list">
             <li>
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li>
-              <a href="tel:+380961111111">+38 096 111 11 11</a>
+              <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
         </address>
@@ -39,21 +39,21 @@
       <!--Уникальный контент-->
       <main>
         <!--Герой-->
-        <section>
+        <section class="hero">
           <h1>
             Эффективные решения для вашего бизнеса
           </h1>
           <button type="button">Заказать услугу</button>
         </section>
         <!--Наши особенности. Логический заголовок h2 потом убрать-->
-        <section>
+        <section class="section">
           <h2>Наши особенности</h2>
-          <ul>
+          <ul class="our-features list">
             <li>
               <h3>
                 Внимание к деталям
               </h3>
-              <p>
+              <p class="section-paragraph">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
@@ -61,7 +61,7 @@
               <h3>
                 Пунктуальность
               </h3>
-              <p>
+              <p class="section-paragraph">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
@@ -69,7 +69,7 @@
               <h3>
                 Планирование
               </h3>
-              <p>
+              <p class="section-paragraph">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
@@ -77,18 +77,18 @@
               <h3>
                 Современные технологии
               </h3>
-              <p>
+              <p class="section-paragraph">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
           </ul>
         </section>
         <!--Чем мы занимаеся-->
-        <section>
+        <section class="section">
           <h2>
             Чем мы занимаемся
           </h2>
-          <ul>
+          <ul class="our-projects list">
             <li>
               <img src="./images/what-we-do/what-we-do-1.jpg" alt="человек печатает на клавиатуре" width="370" height="294">
             </li>
@@ -101,17 +101,17 @@
           </ul>
         </section>
         <!--Наша команда-->
-        <section>
+        <section class="section">
           <h2>
             Наша команда
           </h2>
-          <ul>
+          <ul class="our-team list">
             <li>
               <img src="./images/our-team/img.jpg" alt="Первый член команды" width="270" height="261">
               <h3>
                 Игорь Демьяненко
               </h3>
-              <p lang="en">
+              <p class="section-paragraph" lang="en">
                 Product Designer
               </p>
             </li>
@@ -120,7 +120,7 @@
               <h3>
                 Ольга Репина
               </h3>
-              <p lang="en">
+              <p class="section-paragraph" lang="en">
                 Frontend Developer
               </p>
             </li>
@@ -129,7 +129,7 @@
               <h3>
                 Николай Тарасов
               </h3>
-              <p lang="en">
+              <p class="section-paragraph" lang="en">
                 Marketing
               </p>
             </li>
@@ -138,7 +138,7 @@
               <h3>
                 Михаил Ермаков
               </h3>
-              <p lang="en">
+              <p class="section-paragraph" lang="en">
                 UI Designer
               </p>
             </li>
@@ -147,20 +147,19 @@
       </main>
       <!--Подвал сайта-->
       <footer>
-        <a href="/" lang="en" aria-label="логотип кампании">
-          <span>Web</span>Studio
+        <a class="logo link" href="/" lang="en" aria-label="логотип кампании">Web<span class="footer-logo">Studio</span>
         </a>
         <address>
-          <ul>
+          <ul class="footer-address list">
             <li>
-              <a href="https://goo.gl/maps/yxL3MHrEy7Q6VwSg8" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки,
+              <a class="street link" href="https://goo.gl/maps/yxL3MHrEy7Q6VwSg8" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки,
                 26</a>
             </li>
             <li>
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li>
-              <a href="tel:+380961111111">+38 096 111 11 11</a>
+              <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
         </address>
