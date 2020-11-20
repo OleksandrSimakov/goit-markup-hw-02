@@ -1,28 +1,37 @@
 /* основной фон #FFFFFF
 вторичный фон #F5F4FA
 фон героя и футера #2F303A
-синий #2196F3
-черный лого #000000
-черный основной #212121
-серый шапка и абзацы #757575
-белый основной #FFFFFF
-белый подвал rgba(255, 255, 255, 0.6) */
+синий акцент #2196F3
+черный текст лого #000000
+черный текст основной #212121
+черный текст вторичный (серые шапка и абзацы) #757575
+белый текст основной #FFFFFF
+белый текст подвал rgba(255, 255, 255, 0.6) */
+
+:root {
+  --primary-black-color: #212121;
+  --secondary-black-color: #757575;
+  --primary-white-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --hero-and-footer-background-color: #2f303a;
+  --accent-color: #2196f3;
+}
 
 /* body */
 body {
-  background-color: #ffffff;
-  color: #212121;
+  background-color: var(--primary-white-color);
+  color: var(--primary-black-color);
 }
 
 /* logo header */
 .logo {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .header-logo {
-  color: #212121;
+  color: #000000;
 }
 .footer-logo {
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 
 /* ul */
@@ -37,47 +46,61 @@ body {
 
 /* site-nav */
 .site-nav .link {
-  color: #212121;
+  color: var(--primary-black-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* header-address list */
 .header-address .link {
-  color: #757575;
+  color: var(--secondary-black-color);
 }
 .header-address .link:hover,
 .header-address .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
-/* hero */
+/* hero. background is temporarily set */
 .hero {
-  color: #ffffff;
-  background-color: #2f303a;
+  background-color: var(--hero-and-footer-background-color);
+}
+.hero-title {
+  color: var(--primary-white-color);
 }
 
 /* section paragraph */
 .section-paragraph {
-  color: #757575;
-}
-.footer-address link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--secondary-black-color);
 }
 
 /* footer */
 footer {
-  background-color: #2f303a;
+  background-color: var(--hero-and-footer-background-color);
 }
 .footer-address .link {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-address .link:hover,
 .footer-address .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .street.link {
-  color: #ffffff;
+  color: var(--primary-white-color);
+}
+
+/* visually hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
