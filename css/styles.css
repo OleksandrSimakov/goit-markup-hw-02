@@ -17,6 +17,10 @@
   --accent-color: #2196f3;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
 /* body */
 body {
   background-color: var(--primary-white-color);
@@ -89,7 +93,11 @@ footer {
 .street.link {
   color: var(--primary-white-color);
 }
-
+/* button */
+.button {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
 /* visually hidden */
 .visually-hidden {
   position: absolute;
