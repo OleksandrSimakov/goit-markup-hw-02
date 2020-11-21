@@ -1,0 +1,21 @@
+.site-nav.link.current {
+  color: var(--accent-color);
+}
+
+/* hero. background is temporarily set */
+.hero {
+  background-color: var(--hero-and-footer-background-color);
+}
+.hero-title {
+  color: var(--primary-white-color);
+}
+
+/* section paragraph */
+.our-features-paragraph {
+  color: var(--secondary-black-color);
+
+  /* main button */
+}
+.button {
+  font-weight: 700;
+}
