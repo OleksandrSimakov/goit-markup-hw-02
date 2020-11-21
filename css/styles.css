@@ -105,7 +105,13 @@ footer {
 .button {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  font-weight: 700;
 }
+/* portfolio-nav button */
+.portfolio-nav.button {
+  font-weight: 500;
+}
+
 /* visually hidden */
 .visually-hidden {
   position: absolute;
