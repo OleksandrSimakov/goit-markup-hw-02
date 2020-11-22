@@ -1,12 +1,12 @@
-/* основной фон #FFFFFF
-вторичный фон #F5F4FA
-фон героя и футера #2F303A
-синий акцент #2196F3
-черный текст лого #000000
-черный текст основной #212121
-черный текст вторичный (серые шапка и абзацы) #757575
-белый текст основной #FFFFFF
-белый текст подвал rgba(255, 255, 255, 0.6) */
+/* primary background colour #FFFFFF
+secondary background colour (our team section) #F5F4FA
+hero and footer background colour #2F303A
+accent #2196F3
+logo black colour #000000
+primary black colour #212121
+secondary black colour (grey header and paragraphs) #757575
+primary white colour #FFFFFF
+footer white colour rgba(255, 255, 255, 0.6) */
 
 :root {
   --primary-black-color: #212121;
@@ -26,6 +26,8 @@
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-black-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 /* ul */
@@ -36,18 +38,32 @@ body {
 /* a */
 .link {
   text-decoration: none;
+  font-style: normal;
 }
 
 /* site-nav */
-.site-nav .link {
+.site-nav.list .link {
   color: var(--primary-black-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav.list .link:hover,
+.site-nav.list .link:focus {
+  color: var(--accent-color);
+}
+.site-nav.list .link.current {
   color: var(--accent-color);
 }
 
-/* header and footer logo */
+/* logo, header and footer logo */
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
 .site-nav > .link {
   color: var(--accent-color);
 }
@@ -62,6 +78,10 @@ body {
 /* header-address list */
 .header-address .link {
   color: var(--secondary-black-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .header-address .link:hover,
 .header-address .link:focus {
@@ -84,11 +104,11 @@ footer {
 .footer-address.link:hover {
   color: var(--accent-color);
 }
-/* button */
-.button {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
+.footer-address.list {
+  font-size: 14px;
+  line-height: 1.71;
 }
+
 /* visually hidden */
 .visually-hidden {
   position: absolute;
@@ -101,4 +121,9 @@ footer {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* button */
+button {
+  letter-spacing: 0.03em;
 }
